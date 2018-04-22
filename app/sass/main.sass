@@ -1,0 +1,511 @@
+@import "fonts"
+@import "libs"
+
+.gradient
+	background-image: linear-gradient(0deg, #F74B2D, #E2016D)
+header
+	position: fixed
+	background-color: #fff
+	z-index: 100
+	width: 100%
+	left: 0
+body
+	font-size: 0
+	min-width: 320px
+	font-family: arial, sans-serif
+	padding: 0
+	margin: 0
+	overflow-x: hidden
+.container
+	margin: 0 auto
+	display: block
+	padding: 0 15px
+	width: 1200px
+	box-sizing: border-box
+.top-line
+	position: relative
+	padding: 13px 0 16px
+	box-shadow: 0 1px 3px 0 #24292C
+	&:before
+		position: absolute
+		content: ''
+		width: 100%
+		height: 3px
+		background-image: linear-gradient(0deg, #F74B2D, #E2016D)
+		top: 0
+	ul
+		li
+			margin: 0 5px
+			&.active
+				a
+					border: 1px solid #D5065C
+		a
+			font-family: arial, sans-serif
+			font-size: 14px
+			font-weight: 700
+			text-decoration: none
+			display: inline-block
+			outline: none
+			color: #232628
+			padding: 8px 20px
+			border-radius: 20px
+			border: 1px solid transparent
+.flx
+	display: flex
+.aic
+	align-items: center
+.jcsb
+	justify-content: space-between
+ul
+	padding: 0
+	margin: 0
+	list-style-type: none
+.btn
+	color: #fff
+	text-decoration: none
+	display: inline-block
+	outline: none
+	font-size: 14px
+	background-image: linear-gradient(90deg, #F74B2D, #E2016D)
+	min-height: 50px
+	border: 0
+	appearance: none
+	font-weight: 700
+	padding: 0 24px
+	cursor: pointer
+.s1
+	background-image: url(/img/s1.jpg)
+	background-position: 50% 0
+	background-size: cover
+	position: relative
+	text-align: center
+	overflow: hidden
+	min-height: 100vh
+	display: flex
+	align-items: center
+	justify-content: center
+	h1
+		font-size: 50px
+		color: #fff
+		font-family: 'Trebuchet'
+		padding-top: 13%
+	&:before
+		position: absolute
+		content: ''
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		z-index: 1
+		background-color: #504065
+		opacity: 0.4
+	&:after
+		position: absolute
+		content: ''
+		width: 1366px
+		height: 724px
+		top: calc(40px + 50%)
+		left: 50%
+		transform: translate(-50%, -50%)
+		background-image: url(/img/g1.png)
+		z-index: 2
+	> *
+		position: relative
+		z-index: 3
+	.btn
+		padding: 0 50px
+		border-radius: 4px
+		box-shadow: 0 15px 20px rgba(242, 58, 60, .23)
+		margin-bottom: 80px
+.button
+	text-align: center
+	.btn
+		padding: 0 50px
+		border-radius: 4px
+		box-shadow: 0 15px 20px rgba(242, 58, 60, .23)
+.s2
+	background-image: url(/img/s2.jpg)
+	background-position: 50% 100%
+	background-repeat: repeat-x
+	.fp-tableCell
+		vertical-align: top
+	p
+		font-size: 26px
+		text-align: center
+		line-height: 40px
+		padding: 160px 40px
+		font-family: 'proxima', arial
+section
+	overflow: hidden
+	h2
+		font-family: 'Trebuchet'
+		font-size: 40px
+		font-weight: 700
+		text-align: center
+.s3
+	.container
+		position: relative
+		&:before, &:after
+			position: absolute
+			content: ''
+			width: 134px
+			height: 87px
+		&:before
+			background-image: url(/img/s3-1.png)
+			top: 160px
+			left: 0
+		&:after
+			background-image: url(/img/s3-2.png)
+			bottom: 100px
+			height: 83px
+			right: 100px
+	h2
+		margin-top: 0
+		padding-top: 160px
+	.items
+		display: flex
+		flex-wrap: wrap
+		padding-bottom: 45px
+	.item
+		flex-basis: 33.333%
+		max-width: 33.333%
+		background-color: #F4FAFC
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		&.center
+			text-align: center
+			justify-content: center
+			h3, p
+				padding-left: 0
+		img
+			width: 100%
+		h3
+			font-size: 30px
+			line-height: 30px
+			font-weight: 700
+			font-family: 'Trebuchet'
+			color: #333333
+			padding-left: 42px
+			padding-top: 40px
+			margin: 0 0 10px
+		p
+			font-size: 18px
+			line-height: 30px
+			color: #E91A57
+			padding-left: 42px
+			padding-bottom: 40px
+			margin: 0
+	.button
+		padding-bottom: 120px
+		text-align: center
+		.btn
+			padding: 0 50px
+			border-radius: 4px
+			box-shadow: 0 15px 20px rgba(242, 58, 60, .23)
+.s4
+	background-image: url(/img/s4.jpg)
+	background-size: cover
+	background-position: 50% 0
+	.container
+		position: relative
+		padding-top: 80px
+		&:after
+			position: absolute
+			content: ''
+			width: 180px
+			height: 196px
+			background-image: url(/img/s4-1.png)
+			bottom: 150px
+			right: -120px
+#carousel
+	.owl-item
+		position: relative
+		z-index: 1
+		padding: 30px 0
+		p
+			font-size: 22px
+			font-weight: 700
+			text-align: center
+			display: none
+		&.active
+			z-index: 2
+			img
+				opacity: 0.5 !important
+		img
+			transform: scale(.8)
+			transition: all .2s ease
+			border-radius: 12px
+			box-shadow: 0 3px 30px rgba(20, 53, 112, 0.5)
+			opacity: 0 !important
+		&.center
+			z-index: 3
+			p
+				display: block
+			img
+				transform: scale(1)
+				opacity: 1 !important
+.owl-nav
+	position: absolute
+	top: 160px
+	width: 100%
+	left: 0
+	.owl-prev, .owl-next
+		position: absolute
+		width: 22px
+		height: 19px
+		background-image: url(/img/arrow.png) !important
+		top: 50%
+		outline: none
+	.owl-next
+		right: -10px
+		transform: rotate(180deg)
+	.owl-prev
+		left: -10px
+.s4-items
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+	padding-bottom: 80px
+.s4-item
+	text-align: center
+	font-family: 'Trebuchet'
+	width: 250px
+	color: #333333
+	h3
+		font-size: 60px
+		margin: 0
+	p
+		font-size: 16px
+.s5
+	border-bottom: 1px solid #CEDFF0
+	h2
+		position: relative
+		padding-top: 80px
+		&:before
+			content: ''
+			position: absolute
+			width: 179px
+			height: 167px
+			background-image: url(/img/s5-1.png)
+			left: -90px
+			top: 100%
+	
+.s5-line
+	text-align: center
+	height: 424px
+	position: relative
+	margin-top: 80px
+	padding-bottom: 80px
+	p
+		font-size: 18px
+		font-family: 'roboto'
+		font-weight: 400
+		margin: 0
+		span
+			font-size: 22px
+			color: #E6115F
+			font-weight: 700
+.s5-item
+	width: 16.6%
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: center
+	&:nth-child(2n)
+		height: 211px
+		align-self: flex-end
+		&:before
+			position: relative
+			content: ""
+			width: 26px
+			height: 26px
+			border-radius: 50%
+			background-color: #fff
+			border: 3px solid #EB2250
+	&:nth-child(2n-1)
+		align-self: flex-start
+		height: 245px
+		&:after
+			position: relative
+			content: ""
+			width: 26px
+			height: 26px
+			border-radius: 50%
+			background-color: #fff
+			border: 3px solid #EB2250
+.line
+	position: absolute
+	display: flex
+	justify-content: space-between
+	width: 100%
+	top: calc(50% - 59px)
+	border-bottom: 5px solid #D9D9D9
+	padding-bottom: 10px
+	p
+		font-size: 18px
+		font-family: 'Roboto'
+		color: #707070
+.s6
+	h2
+		padding-top: 100px
+	.fp-tableCell
+		vertical-align: bottom
+#carousel2
+	margin-top: 20%
+	.owl-item
+		text-align: center
+	img
+		width: 200px !important
+		display: inline-block !important
+	h3
+		font-size: 22px
+		color: #171717
+		margin-bottom: 0
+	p
+		font-size: 12px
+		color: #ED294B
+		margin-bottom: 20px
+.s6-top
+	position: relative
+	> *
+		position: relative
+		z-index: 2
+	&:after
+		position: absolute
+		content: ''
+		width: 1291px
+		height: 209px
+		background-image: url(/img/s6.png)
+		right: 0
+		bottom: -70px
+.s7
+	background-image: url(/img/s7.png)
+	background-size: cover
+	background-position: 50% 0
+	text-align: center
+	position: relative
+	&:after
+		position: absolute
+		content: ''
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+		background-image: url(/img/s7-b.png)
+		background-repeat: no-repeat
+		background-position: 50% 50%
+	.container
+		padding-top: 160px
+		padding-bottom: 80px
+		position: relative
+		z-index: 2
+	.special
+		display: inline-block
+		font-size: 16px
+		background-color: #fff
+		font-family: 'Trebuchet'
+		padding: 8px 15px
+		border-radius: 4px
+	h2
+		margin-top: 0
+.t-self
+	font-size: 16px
+	display: flex
+	justify-content: center
+	margin-bottom: 60px
+	.wrap
+		span
+			margin: 0 15px
+			display: block
+			i
+				font-family: 'Trebuchet'
+				font-style: normal
+				font-weight: 700
+				font-size: 40px
+				background-color: #fff
+				display: inline-block
+				margin: 0 5px
+				vertical-align: top
+				height: 67px
+				line-height: 67px
+				color: #333333
+				width: 50px
+				border-radius: 4px
+
+		> i
+			display: block
+			font-family: 'roboto'
+			color: #ED294B
+			font-style: normal
+			margin-top: 12px
+footer
+	font-size: 20px
+	background-color: #193354
+	font-size: 12px
+	color: #fff
+	padding: 26px 0
+	position: relative
+	&:after
+		position: absolute
+		content: ''
+		width: 100%
+		height: 5px
+		background-image: linear-gradient(0deg, #F74B2D, #E2016D)
+		bottom: 0
+		left: 0
+	li
+		margin-left: 40px
+		a
+			color: #fff
+.mfp-bg
+	opacity: 1
+	background-image: url(/img/popup.png)
+	background-position: 50% 50%
+	background-size: cover
+#popup
+	margin: 0 auto
+	width: 100%
+	max-width: 470px
+	padding: 0 50px 56px
+	background-color: #fff
+	position: relative
+	border-radius: 10px
+	box-sizing: border-box
+	h2
+		font-family: 'Trebuchet'
+		font-size: 40px
+		font-weight: 700
+		margin: 0
+		padding: 15px 0 0
+	input
+		width: 100%
+		display: block
+		margin: 15px 0
+		border: 1px solid #707070
+		font-family: Arial, sans-serif
+		border-radius: 4px
+		height: 50px
+		font-size: 12px
+		padding-left: 18px
+		box-sizing: border-box
+	
+	.button
+		margin-top: 20px
+		button
+			width: 100%
+#fp-nav
+	li
+		width: 20px
+		height: 20px
+		a
+			width: 20px
+			height: 20px
+			border-radius: 50%
+			border: 3px solid #B2D3DA
+			box-sizing: border-box
+			&.active
+				border-color: #E2016D
+			span
+				display: none
+@import "media"
